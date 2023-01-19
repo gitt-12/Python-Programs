@@ -1,0 +1,40 @@
+***1)Write a program to print multiplication of a given number***
+
+num=int(input("Enter the number of which you want to get the multiplication table: "))
+for i in range(1,11):
+    print(str(num) + " X "+ str(i)+" = " + str(i*num))
+    #print("{num}X{i}={num*i}") //This also works the same
+    
+    
+    ***OUTPUT***
+    
+Enter the number of which you want to get the multiplication table: 5
+5 X 1 = 5
+5 X 2 = 10
+5 X 3 = 15
+5 X 4 = 20
+5 X 5 = 25
+5 X 6 = 30
+5 X 7 = 35
+5 X 8 = 40
+5 X 9 = 45
+5 X 10 = 50
+> 
+
+
+***2)Write a program tp greet all the person names stored in a list l1, and which starts with s
+l1=["Simpi", "Soham", "King","Prem"]
+
+
+l1=["Simpi","Soham","King","Prem"]
+for name in l1:
+    if name.startswith("S"):
+        print("Hello "+name)
+        
+        
+***OUTPUT***
+Hello Simpi
+Hello Soham
+> 
+
+
