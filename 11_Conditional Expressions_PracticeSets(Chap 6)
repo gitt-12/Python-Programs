@@ -33,6 +33,24 @@ Enter the number 4: 15
 
 
 
+***5)Search if the name inserted by the user is in the list or not
+
+
+names=["Git","Bidyu","Lilly","Tina","Swaggy","Mimi","Kuhi","Pal"]
+name=input("Insert the name:\n")
+if name in names:
+    print("This name is present in the list :p")
+else:
+    print("This name is not present in the list :d")
+    
+    
+***OUTPUT***
+
+Insert the name:
+Git
+This name is present in the list :p
+> 
+
 ***2) Write a program to find out whether a student is pass or fail if it requires total 40% and at least 33% in each subject to pas.ASsume 3 subjects and take marks as an input from the user.***
 
 
