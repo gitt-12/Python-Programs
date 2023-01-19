@@ -1,0 +1,150 @@
+***Conditional Expression Practice Sets.***
+
+
+***1.Write a proram to find greatest of four numbers entered by the user***
+
+
+num1=input("Enter the number 1: ")
+num2=input("Enter the number 2: ")
+num3=input("Enter the number 3: ")
+num4=input("Enter the number 4: ")
+if(num1>num4):
+    f1=num1
+else:
+        f1=num4
+if(num2>num3):
+    f2=num2
+else:
+        f2=num3
+        
+if(f1>f2):
+    print(str(f1)+ "is the greatest number!")
+else:
+    print(str(f2)+" is the greatest number!")
+    
+    
+    ***OUTPUT***
+Enter the number 1: 55
+Enter the number 2: 20
+Enter the number 3: 90
+Enter the number 4: 15
+90 is the greatest number!
+> 
+
+
+
+***2) Write a program to find out whether a student is pass or fail if it requires total 40% and at least 33% in each subject to pas.ASsume 3 subjects and take marks as an input from the user.***
+
+
+
+sub1=int(input("Enter the mark of subject 1: "))
+sub2=int(input("Enter the mark of subject 2: "))
+sub3=int(input("Enter the mark of subject 3: "))
+if(sub1<33 or sub2<33 or sub3<33):
+    print("You've failed because you have secured less than 33% in one of the subject!:/")
+elif(sub1+sub2+sub3)/3<40:
+    print("Sorry, You could'nt passed the examination because the total marks you have obtained is less than 40%")
+else:
+    print("Congratulations! You have passed the Examination <3")
+    
+    
+    
+***OUTPUT***
+
+
+#Case 1:
+Enter the mark of subject 1: 13
+Enter the mark of subject 2: 25
+Enter the mark of subject 3: 34
+You've failed because you have secured less than 33% in one of the subject!:/
+> 
+
+#Case 2:
+Enter the mark of subject 1: 34
+Enter the mark of subject 2: 36
+Enter the mark of subject 3: 38
+Sorry, You could'nt passed the examination because the total marks you have obtained is less than 40%
+> 
+
+#Case 3:
+Enter the mark of subject 1: 75
+Enter the mark of subject 2: 80
+Enter the mark of subject 3: 90
+Congratulations! You have passed the Examination <3
+> 
+
+
+
+***3)A spam commrnt is defined as a text  containing following keywords:
+"Click this", "Make a lot of money", "buy now".Write a program to detect these spams.
+
+
+text=input("Enter the text:\n")
+if("make a lot of money"in text):
+    spam=True
+elif("buy now" in text):
+    spam=True
+elif("click this" in text):
+    spam=True
+elif("subscribe now" in text):
+    spam=True
+else:
+    spam=False
+if(spam):
+    print("This text is spam :d")
+else:
+    print("This text is not a spam")
+    
+    
+    
+ ***OUTPUT***
+ 
+ #Case 1
+ 
+ Enter the text:
+watch this video and make a lot of money
+This text is spam :d
+> 
+
+#Case 2:
+
+
+Enter the text:
+You won't get such opportunity later,click this and buy now!!!
+This text is spam :d
+> 
+
+
+#Case 3:
+
+Enter the text:
+You should report to spam comments,you've right to do so!!!
+This text is not a spam
+> 
+
+
+***4)Write a program to check if the username entered by any user has less than 10 characters or not and also report them if they can put the name as username. (if number of characters is less than 10, then that name can be put as username)
+
+username=input("Enter your username:\n")
+f1=len(username)
+if(f1<10):
+    print("You can put " + str(username) + " as your username as it contains less than 10 characters")
+else:
+    print(("You can not put " + str(username) + " as your username as it contains less than 10 characters"))
+    
+    
+ ***OUTPUT***
+ 
+ 
+#Case 1:
+
+Enter your username:
+miss__saikia_
+You can not put miss__saikia_ as your username as it contains less than 10 characters
+> 
+
+#Case 2
+Enter your username:
+git
+You can put git as your username as it contains less than 10 characters
+> 
