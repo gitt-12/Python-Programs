@@ -81,3 +81,38 @@ print(f"The factorial of {num} is {factorial}")
 Enter a number: 5
 The factorial of 5 is 120
 > 
+
+
+
+***PATTERN***
+
+n=int(input("Enter a number: "))
+for i in range(n):
+    print("*"*(n-i))   #Prints * n-i times
+    
+    
+***OUTPUT***
+Enter a number: 5
+*****
+****
+***
+**
+*
+> 
+
+
+***5)Remove a given word from a string
+
+--->>
+
+def remove_and_strip(string, word):
+    newStr=string.replace(word,"")
+    return newStr.strip()
+line="Hi everyone, Good evening, It's so cold today!"
+n=remove_and_strip(line, "today")
+print(n)
+
+***OUTPUT***
+
+Hi everyone, Good evening, It's so cold !
+> 
