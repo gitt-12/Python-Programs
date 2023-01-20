@@ -38,3 +38,46 @@ Hello Soham
 > 
 
 
+***2)Write a proram to find whether a given number is prime or not
+
+
+--->>>
+
+num=int(input("Enter a number: "))
+prime=True
+for i in range(2,num):
+ if(num%i==0):
+    prime=False
+    
+if prime:
+    print("The number is a prime number!")
+else:
+    print("The number is not prime!")
+    
+    
+***OUTPUT***
+
+Enter a number: 113
+The number is a prime number!
+> 
+
+Enter a number: 100
+The number is not prime!
+> 
+
+
+***3)Factorial of a given number
+
+
+num=int(input("Enter a number: "))
+factorial=1
+for i in range (1,num+1):
+    factorial=factorial*i
+print(f"The factorial of {num} is {factorial}")
+
+
+***OUTPUT***
+
+Enter a number: 5
+The factorial of 5 is 120
+> 
