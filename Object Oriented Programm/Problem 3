@@ -1,0 +1,37 @@
+***Create a class with a class attribute  a; create an object from it and set a directly using object a=b. Does this change the class attribute?***
+
+
+--->>>
+
+
+
+class Sample:
+    a="Git" # This a is a class attribute 
+
+obj = Sample()
+obj.a="Lily"   #This a is an instance attribute which is formed only for obj
+
+print(Sample.a)
+print(obj.a)
+
+
+# So, it does not change the class attribute.
+#To change the class attribute we need to change obj to Sample, i.e. instead of writing obj.a, if we write Sample.a = "Lily", then the class attribute will also change to Lily.
+
+
+Sample.a="Lily" #It will change the class attribute
+print(Sample.a)
+print(obj.a)
+
+
+
+***OUTPUT***
+
+
+Git
+Lily
+Lily
+Lily
+> 
+
+
