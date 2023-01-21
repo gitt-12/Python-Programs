@@ -1,0 +1,26 @@
+***1)Create a class programmer for storing the details of few programmers working at microsoft.
+
+--->>>
+
+
+class Programmer:
+    company="Microsoft"
+    def __init__(self,name,product):
+        self.name = name
+        self.product =product
+
+    def getInfo(self):
+        print(f"The name of the {self.company} Programmer is {self.name} and the product is {self.product}")
+git = Programmer("Git","Skype")
+Alka = Programmer("Alka","GitHub")
+
+git.getInfo()
+Alka.getInfo()
+
+
+
+***OUTPUT***
+
+The name of the Microsoft Programmer is Git and the product is Skype
+The name of the Microsoft Programmer is Alka and the product is GitHub
+> 
