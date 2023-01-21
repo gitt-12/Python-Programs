@@ -1,0 +1,39 @@
+***Add a static method to the problem 2 to reet the user with Hello***
+
+
+--->>>
+
+
+n=int(input("Enter a number : "))
+class Calculator:
+    def __init__(self, num):
+        self.number = num
+
+    def square(self):
+        print(f"The value of {self.number} square is {self.number **2}")
+    def squareRoot(self):
+        print(f"The value of {self.number} square rootis {self.number **0.5}")
+    def cube(self):
+        print(f"The value of {self.number} cube is {self.number **3}")
+
+    @staticmethod
+    def greet():
+        print("******Hello!!! Welcome to Git Calculator :) *****")
+
+a= Calculator(n)
+a.greet()
+a.square()
+a.squareRoot()
+a.cube()
+
+
+
+
+***OUTPUT****
+
+Enter a number : 81
+******Hello!!! Welcome to Git Calculator :) *****
+The value of 81 square is 6561
+The value of 81 square rootis 9.0
+The value of 81 cube is 531441
+> 
